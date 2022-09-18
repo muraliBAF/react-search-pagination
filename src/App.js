@@ -23,7 +23,7 @@ export default function App() {
 
   const onSearchHandler = (e) => {
     const { value } = e.target;
-    if (!value) {
+    if (value === '') {
       setData({
         next: null,
         previous: null,
